@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gokul Kumar Bhoomibalan</title>
+  <meta name="description" content="Software builder. India → Germany → US.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Games bar -->
+<nav class="game-bar" aria-label="Games I made">
+  <span class="game-bar-tag">I make games</span>
+  <a class="game-link" href="https://gokul-bhoomi.github.io/euro-rush/">
+    <span class="game-bar-name">🏎️ Euro Rush</span>
+    <span class="game-bar-desc">couch racer</span>
+    <span class="game-bar-go">→</span>
+  </a>
+  <span class="game-bar-sep" aria-hidden="true"></span>
+  <a class="game-link" href="https://gokul-bhoomi.github.io/porkalam/">
+    <span class="game-bar-name">⚔️ Porkalam</span>
+    <span class="game-bar-desc">mythic 1v1 fighter</span>
+    <span class="game-bar-go">→</span>
+  </a>
+</nav>
+
+<main>
+
+  <header>
+    <h1>Gokul Kumar Bhoomibalan</h1>
+    <p class="tagline">Software builder</p>
+    <nav class="links">
+      <!-- ✉️ Put your new email in data-email="" and the button appears. Click copies it. -->
+      <button class="copy-email" type="button" data-email="" hidden>
+        <span class="label">Email</span>
+      </button>
+      <a href="https://linkedin.com/in/gokul-kumar-bhoomibalan-52aa86195">LinkedIn</a>
+      <a href="https://github.com/gokul-bhoomi">GitHub</a>
+      <!-- 𝕏 Put your X profile link in href="" and the link appears. -->
+      <a class="x-link" href="https://x.com/BGokulkumar" hidden>X</a>
+    </nav>
+  </header>
+
+  <!-- Journey: India → Germany → US -->
+  <figure class="journey" id="journey" title="Replay">
+    <svg viewBox="0 0 600 190" role="img" aria-label="A plane flies from India to Germany to the United States">
+      <defs>
+        <clipPath id="disc"><circle r="17"/></clipPath>
+        <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#1f2d4d" flood-opacity=".2"/>
+        </filter>
+
+        <g id="flag-in">
+          <g clip-path="url(#disc)">
+            <rect x="-17" y="-17" width="34" height="11.4" fill="#ff9933"/>
+            <rect x="-17" y="-5.7" width="34" height="11.4" fill="#ffffff"/>
+            <rect x="-17" y="5.7" width="34" height="11.4" fill="#138808"/>
+            <circle r="4.2" fill="none" stroke="#000080" stroke-width="1"/>
+            <circle r="1" fill="#000080"/>
+          </g>
+        </g>
+        <g id="flag-de">
+          <g clip-path="url(#disc)">
+            <rect x="-17" y="-17" width="34" height="11.4" fill="#1f1f1f"/>
+            <rect x="-17" y="-5.7" width="34" height="11.4" fill="#dd0000"/>
+            <rect x="-17" y="5.7" width="34" height="11.4" fill="#ffce00"/>
+          </g>
+        </g>
+        <g id="flag-us">
+          <g clip-path="url(#disc)">
+            <rect x="-17" y="-17" width="34" height="34" fill="#ffffff"/>
+            <rect x="-17" y="-17" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="-11.77" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="-6.54" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="-1.31" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="3.92" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="9.15" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="14.38" width="34" height="2.62" fill="#b22234"/>
+            <rect x="-17" y="-17" width="17" height="17" fill="#3c3b6e"/>
+            <g fill="#fff">
+              <circle cx="-12" cy="-12" r=".9"/><circle cx="-7" cy="-12" r=".9"/><circle cx="-2.5" cy="-12" r=".9"/>
+              <circle cx="-9.5" cy="-8.5" r=".9"/><circle cx="-4.5" cy="-8.5" r=".9"/>
+              <circle cx="-12" cy="-5" r=".9"/><circle cx="-7" cy="-5" r=".9"/><circle cx="-2.5" cy="-5" r=".9"/>
+            </g>
+          </g>
+        </g>
+
+        <mask id="reveal" maskUnits="userSpaceOnUse">
+          <path id="revealPath" fill="none" stroke="#fff" stroke-width="8"
+                d="M70 130 C150 25, 230 25, 300 115 C370 25, 450 25, 530 130"/>
+        </mask>
+      </defs>
+
+      <path id="route" class="route" mask="url(#reveal)"
+            d="M70 130 C150 25, 230 25, 300 115 C370 25, 450 25, 530 130"/>
+
+      <g class="pin" data-at="0">
+        <g transform="translate(70 130)" filter="url(#soft)">
+          <circle r="20" fill="#fff"/><use href="#flag-in"/>
+        </g>
+        <text x="70" y="176">India</text>
+      </g>
+      <g class="pin" data-at="0.5">
+        <g transform="translate(300 115)" filter="url(#soft)">
+          <circle r="20" fill="#fff"/><use href="#flag-de"/>
+        </g>
+        <text x="300" y="161">Germany</text>
+      </g>
+      <g class="pin" data-at="1">
+        <g transform="translate(530 130)" filter="url(#soft)">
+          <circle r="20" fill="#fff"/><use href="#flag-us"/>
+        </g>
+        <text class="now" x="530" y="176">US · now</text>
+      </g>
+
+      <g class="plane" id="plane">
+        <path d="M13 0 L4 -2 L-3 -11 L-7 -11 L-2 -2 L-9 -2 L-12 -6 L-15 -6 L-13 0 L-15 6 L-12 6 L-9 2 L-2 2 L-7 11 L-3 11 L4 2 Z"/>
+      </g>
+    </svg>
+  </figure>
+
+  <section class="about reveal">
+    <h2>Who am I</h2>
+    <p>I'm self-driven, high-agency, and at my best solving the problems others call impossible.</p>
+  </section>
+
+  <section class="reveal">
+    <h2>Experience</h2>
+
+    <div class="role">
+      <div class="role-head">
+        <h3>Software Development Engineer II · AmazonAPI</h3>
+        <span class="when">Apr 2025 – Present</span>
+      </div>
+      <div class="where">Amazon · Seattle, United States</div>
+      <ul>
+        <li>Helping scale the gateway behind every Amazon store, serving <strong>50M+ requests/sec</strong>.</li>
+        <li>Pitched Store-wide tracing to the C-suite and <strong>got it funded</strong>.</li>
+        <li>Built a mobile debug mode everyone called impossible, <strong>in 2 days</strong>.</li>
+        <li>Cut tracing onboarding from <strong>5 weeks to 1 day</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="role">
+      <div class="role-head">
+        <h3>Software Development Engineer I → II · Gifting</h3>
+        <span class="when-wrap">
+          <span class="when">Sep 2022 – Apr 2025</span>
+          <span class="promo" title="Promoted to SDE II in April 2024">↑ Promoted Apr 2024</span>
+        </span>
+      </div>
+      <div class="where">Amazon · Berlin, Germany</div>
+      <ul>
+        <li>Took LLM gift recommendations from <strong>hackathon to the Amazon homepage</strong>.</li>
+        <li>Shipped features worth <strong>$100M+</strong> in revenue and sales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="edu reveal">
+    <h2>Education</h2>
+    <div class="role">
+      <div class="role-head">
+        <h3>PSG College of Technology</h3>
+        <span class="when">2018 – 2022</span>
+      </div>
+      <div class="where muted">BTech, Information Technology · CGPA 9.43 · Coimbatore, India</div>
+    </div>
+    <div class="role">
+      <div class="role-head">
+        <h3>Lisieux Matriculation Higher Secondary School</h3>
+        <span class="when">2004 – 2018</span>
+      </div>
+      <div class="where muted">Grade 95.17% · Coimbatore, India</div>
+    </div>
+  </section>
+
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite">Email copied</div>
+
+<script>
+(() => {
+  // ---- Journey animation ----
+  const route = document.getElementById('route');
+  const reveal = document.getElementById('revealPath');
+  const plane = document.getElementById('plane');
+  const pins = [...document.querySelectorAll('.journey .pin')];
+  const len = route.getTotalLength();
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const LEG = 3000, PAUSE = 900, TOTAL = LEG * 2 + PAUSE;
+  const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  const progressAt = ms =>
+    ms < LEG ? 0.5 * ease(ms / LEG)
+    : ms < LEG + PAUSE ? 0.5
+    : 0.5 + 0.5 * ease(Math.min(1, (ms - LEG - PAUSE) / LEG));
+
+  function draw(p) {
+    const d = len * p;
+    reveal.style.strokeDasharray = `${d} ${len}`;
+    const a = route.getPointAtLength(Math.max(0, d));
+    const b = route.getPointAtLength(Math.min(len, d + 1));
+    const angle = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+    plane.setAttribute('transform', `translate(${a.x} ${a.y - 4}) rotate(${angle})`);
+    // hide the plane while it sits on a flag
+    const nearStop = [0, 0.5, 1].some(s => Math.abs(p - s) < 0.03);
+    plane.style.opacity = nearStop ? 0 : 1;
+    pins.forEach(pin => { if (p >= +pin.dataset.at - 0.001) pin.classList.add('on'); });
+  }
+
+  let raf;
+  function play() {
+    cancelAnimationFrame(raf);
+    pins.forEach(pin => pin.classList.remove('on'));
+    if (reduce) { draw(1); return; }
+    const start = performance.now();
+    const tick = now => {
+      const ms = now - start;
+      draw(progressAt(ms));
+      if (ms < TOTAL) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+  }
+  document.getElementById('journey').addEventListener('click', play);
+  play();
+
+  // ---- Soft fade-up on scroll ----
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+  }), { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // ---- Copy email ----
+  const toast = document.getElementById('toast');
+  const btn = document.querySelector('.copy-email');
+  if (btn.dataset.email) {
+    btn.hidden = false;
+    btn.title = btn.dataset.email;
+    btn.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(btn.dataset.email); }
+      catch { prompt('Copy my email:', btn.dataset.email); return; }
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 1800);
+    });
+  }
+
+  // ---- X link ----
+  const x = document.querySelector('.x-link');
+  if (x.getAttribute('href')) x.hidden = false;
+})();
+</script>
+
+<!-- GoatCounter analytics: replace YOURCODE once you sign up, then uncomment
+<script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+-->
+</body>
+</html>
